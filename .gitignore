@@ -1,0 +1,24 @@
+# → Python virtual environment — machine-specific, regeneratable via requirements.txt
+.venv/
+
+# → Python bytecode cache — auto-generated, no reason to track
+__pycache__/
+*.pyc
+
+# → Jupyter's auto-save checkpoints — regenerated every time you save a notebook
+.ipynb_checkpoints/
+
+# → Secrets/credentials — never belongs in a public repo
+.env
+
+# → Editor-specific settings — machine-specific
+.vscode/
+
+# → Raw data — large files, shouldn't live in a public GitHub repo
+data/raw/
+
+# → Cleaned/processed data — regeneratable by rerunning the cleaning notebook
+data/processed/
+
+# → Saved Prophet model files — regeneratable by rerunning the forecasting notebook
+model/
