@@ -16,9 +16,3 @@ __pycache__/
 
 # → Raw data — large files, shouldn't live in a public GitHub repo
 data/raw/
-
-# → Cleaned/processed data — regeneratable by rerunning the cleaning notebook
-data/processed/
-
-# → Saved Prophet model files — regeneratable by rerunning the forecasting notebook
-model/

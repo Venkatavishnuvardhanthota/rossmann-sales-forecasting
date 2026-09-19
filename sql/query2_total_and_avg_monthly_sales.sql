@@ -1,7 +1,7 @@
 WITH  monthly_sales AS (
 	SELECT 
 		s.StoreType,	
-        DATE_FORMAT(Date, '%Y-%M') AS SalesMonth,
+        DATE_FORMAT(t.Date, '%M') AS SalesMonth,
         t.Sales
 	FROM train t
     INNER JOIN store s

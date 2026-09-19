@@ -1,3 +1,8 @@
+-- Note: this calculates promo lift PER STORE (grouped by Store).
+-- Power BI's "Promo Lift Percentage" DAX measure computes the
+-- CHAIN-WIDE lift separately — the two are different aggregations
+-- of the same underlying concept, not duplicates.
+
 SELECT 
     Store,
     AVG(CASE WHEN Promo = 1 THEN Sales END) AS PromoAvg,

@@ -1,3 +1,8 @@
+-- Uses RANK(), which can return more than 10 rows if a tie occurs at
+-- the boundary. Verified tie-free on this dataset (exactly 20 rows
+-- returned). Use ROW_NUMBER() instead if a guaranteed-exact-10 result
+-- is required regardless of ties.
+
 WITH store_revenue AS (
     SELECT 
         Store,
