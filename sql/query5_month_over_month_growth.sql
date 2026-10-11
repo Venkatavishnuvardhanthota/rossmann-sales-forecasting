@@ -1,3 +1,7 @@
+-- Observed month-over-month change in TOTAL monthly sales. Totals also reflect the number of
+-- days and open stores in each month, so this is descriptive and NOT a test of seasonality
+-- (see Query 6 for per-open-store-day averages by calendar month).
+
 WITH monthly_revenue AS (
     SELECT
         DATE_FORMAT(Date, '%Y-%m') AS SalesMonth,
